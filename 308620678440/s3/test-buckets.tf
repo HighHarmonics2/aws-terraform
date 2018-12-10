@@ -45,6 +45,7 @@ resource "aws_s3_bucket" "ju3" {
     tags {
       Environment = "sbx"
       CreatedBy   = "terraform"
+      Usage       = "test"
     }
     force_destroy = true
     acl           = "private"
