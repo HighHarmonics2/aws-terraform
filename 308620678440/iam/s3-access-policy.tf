@@ -20,7 +20,6 @@ resource "aws_iam_policy" "s3-policy-3" {
             "Resource": [
                 "arn:aws:s3:::shared-test-data-ju",
                 "arn:aws:s3:::shared-test-data-ju2",
-		            "arn:aws:s3:::jure-content"
             ]
         },
         {
@@ -29,12 +28,14 @@ resource "aws_iam_policy" "s3-policy-3" {
             "Action": [
                 "s3:GetObject",
                 "s3:PutObject",
-		            "s3:GetObjectAcl",
+	        "s3:GetObjectAcl",
                 "s3:PutObjectAcl"
+		"s3:DeleteObject"
             ],
             "Resource": [
-                "arn:aws:s3:::shared-test-data-ju/1/*",
-                "arn:aws:s3:::shared-test-data-ju/2/*"
+                "arn:aws:s3:::shared-test-data-ju/*",
+                "arn:aws:s3:::shared-test-data-ju2/*"
+                "arn:aws:s3:::shared-test-data-ju3/*"
             ]
         }
     ]
