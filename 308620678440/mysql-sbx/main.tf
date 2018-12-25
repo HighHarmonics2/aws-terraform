@@ -10,7 +10,7 @@ module "mysql" {
   db_name 		= "test23"
   instance_class	= "db.t2.micro"
   storage		= 20 # min for free tier
-  retention		= 1
+  retention		= 2
   user			= "myadmin"
   pass			= "${var.db_pass}"
 
