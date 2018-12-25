@@ -9,7 +9,7 @@ terragrunt = {
       key       	= "terraform.mysql-iac.tfstate"
       region    	= "us-west-2"
       encrypt   	= true
-      dynamodb_table	= "terragrunt-mysql"
+      dynamodb_table	= "terragrunt-locks"
     }
   }
 }

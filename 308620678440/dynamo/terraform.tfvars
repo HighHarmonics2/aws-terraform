@@ -10,6 +10,7 @@ terragrunt = {
       key       = "terraform.dynamo.tfstate"
       region    = "us-west-2"
       encrypt   = true
+      dynamodb_table	= "terragrunt-locks"
     }
   }
 }
