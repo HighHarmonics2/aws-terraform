@@ -4,7 +4,7 @@
 resource "aws_iam_policy" "s3-policy-3" {
   name        = "s3-shared-test3"
   path        = "/"
-  description = "Policy for access to s3 shared-test-data-ju with no console read, list only on ju2 and jure-content"
+  description = "Policy for access to s3 shared-test-data-ju buckets"
 
   policy = <<EOF
 {
@@ -19,7 +19,7 @@ resource "aws_iam_policy" "s3-policy-3" {
             ],
             "Resource": [
                 "arn:aws:s3:::shared-test-data-ju",
-                "arn:aws:s3:::shared-test-data-ju2",
+                "arn:aws:s3:::shared-test-data-ju2"
             ]
         },
         {
@@ -29,12 +29,12 @@ resource "aws_iam_policy" "s3-policy-3" {
                 "s3:GetObject",
                 "s3:PutObject",
 	        "s3:GetObjectAcl",
-                "s3:PutObjectAcl"
+                "s3:PutObjectAcl",
 		"s3:DeleteObject"
             ],
             "Resource": [
                 "arn:aws:s3:::shared-test-data-ju/*",
-                "arn:aws:s3:::shared-test-data-ju2/*"
+                "arn:aws:s3:::shared-test-data-ju2/*",
                 "arn:aws:s3:::shared-test-data-ju3/*"
             ]
         }
