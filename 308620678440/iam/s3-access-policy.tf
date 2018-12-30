@@ -1,10 +1,12 @@
 /* s3 policies file
+THIS IS A TEST drive - it can be deleted
+use aws_iam_role_policy  - this creates an inline policy
 */
 
-resource "aws_iam_policy" "s3-policy-3" {
-  name        = "s3-shared-test3"
-  path        = "/"
-  description = "Policy for access to s3 shared-test-data-ju buckets"
+#### create policy
+resource "aws_iam_role_policy" "s3-policy-shared" {
+  name        = "s3-shared"
+  role        = "s3-shared-test2"
 
   policy = <<EOF
 {
@@ -28,9 +30,9 @@ resource "aws_iam_policy" "s3-policy-3" {
             "Action": [
                 "s3:GetObject",
                 "s3:PutObject",
-	        "s3:GetObjectAcl",
+	              "s3:GetObjectAcl",
                 "s3:PutObjectAcl",
-		"s3:DeleteObject"
+		            "s3:DeleteObject"
             ],
             "Resource": [
                 "arn:aws:s3:::shared-test-data-ju/*",
