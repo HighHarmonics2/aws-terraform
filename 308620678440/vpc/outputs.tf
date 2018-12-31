@@ -20,6 +20,10 @@ output "vpc-private1-dhcp" {
   value = "${aws_vpc.vpc-private-1.dhcp_options_id}"
 }
 
+output "vpc-private1-sg1" {
+  value = "${aws_security_group.vpc-private1-sg1.id}"
+}
+
 #######################
 # vpc subnet outputs
 output "vpc-subnet-1a" {

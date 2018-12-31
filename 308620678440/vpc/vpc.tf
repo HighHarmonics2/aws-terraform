@@ -1,6 +1,8 @@
 resource "aws_vpc" "vpc-private-1" {
   cidr_block                       = "192.168.0.0/24" #254 address range
   assign_generated_ipv6_cidr_block = true  # needed for egress only gate
+  enable_dns_hostnames            = true
+  enable_dns_support              = true
 
   tags = {
     Environment		= "sbx"
@@ -39,6 +41,52 @@ resource "aws_vpc_peering_connection" "vpc-peer-default-to-private-1a" {
     Environment         = "sbx"
     CreatedBy           = "terraform"
   }
+}
+
+resource "aws_security_group" "vpc-private1-sg1" {
+  name                  = "ssh-https"
+  description           = "SG for ssh and http, https from peered"
+  vpc_id                = "${aws_vpc.vpc-private-1.id}"
+
+  ingress {
+    from_port           = 22
+    to_port             = 22
+    protocol            = "tcp"
+    cidr_blocks         = ["172.31.16.0/20"]
+    description         = "ssh access from peered subnet"
+  }
+
+  ingress {
+    from_port           = 80
+    to_port             = 80
+    protocol            = "tcp"
+    cidr_blocks         = ["172.31.16.0/20"]
+    description         = "http access from peered subnet"
+  }
+
+  ingress {
+    from_port           = 443
+    to_port             = 443
+    protocol            = "tcp"
+    cidr_blocks         = ["172.31.16.0/20"]
+    description         = "https access from peered subnet"
+  }
+
+  ingress {
+    from_port           = 0
+    to_port             = 0
+    protocol            = "-1"
+    self                = true
+    description         = "internal"
+  }
+
+  egress {
+    from_port           = 0
+    to_port             = 0
+    protocol            = "-1"
+    cidr_blocks         = ["0.0.0.0/0"]
+  }
+
 }
 
 resource "aws_route" "peering-default-route" {
