@@ -1,7 +1,7 @@
 pipeline {
     agent {dockerfile true}
     options {
-        withAWS(profile:'jure2')
+        withAWS(credentials:'AKIAI4TKOP2GKQ7PLDEQ:arn:aws:iam::308620678440:role/terraform-build2')
     }
     stages {
         stage('terragrunt init') {
