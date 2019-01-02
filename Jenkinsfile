@@ -1,7 +1,7 @@
 pipeline {
     agent {dockerfile true}
     options {
-        withAWS(credentials:'AKIAI4TKOP2GKQ7PLDEQ:arn:aws:iam::308620678440:role/terraform-build2')
+        withAWS(credentials:'ca4cd14d-c732-4137-b441-b19512930b03')
     }
     stages {
         stage('terragrunt init') {
@@ -9,7 +9,7 @@ pipeline {
                 dir('308620678440') {
                     sh '''
                     cd ./s3/
-                    terragrunt init --terragrunt-iam-role "arn:aws:iam::308620678440:role/terraform-build2"
+                    terragrunt init
                     '''
                 }
             }
