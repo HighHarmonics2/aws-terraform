@@ -9,9 +9,16 @@ pipeline {
         choice(name: 'COMMAND', choices: ['Init', 'Plan', 'Apply'], description: 'Select Terraform process for this build')
     }
     stages {
+        stage('params') {
+           steps {
+              echo "Account param: ${params.ACCOUNT}"
+              echo "Working Directory param: ${params.WORKINGDIR}"
+              echo "Terraform command param: ${params.COMMAND}"
+            }
+        }
         stage('terragrunt init') {
             steps {
-                dir("${params.ACCOUNT}") {
+                dir(params.ACCOUNT) {
                     sh '''
                     cd $WORKINGDIR
                     terragrunt init
