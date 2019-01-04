@@ -9,13 +9,6 @@ pipeline {
         choice(name: 'COMMAND', choices: ['init', 'plan', 'apply'], description: 'Select Terraform process for this build')
     }
     stages {
-        stage('echo parameters') {
-           steps {
-              echo "Account param: ${params.ACCOUNT}"
-              echo "Working Directory param: ${params.WORKINGDIR}"
-              echo "Terraform command param: ${params.COMMAND}"
-            }
-        }
         stage('terragrunt init') {
             when { expression { params.COMMAND == 'init' } }
             steps {
@@ -26,7 +19,7 @@ pipeline {
                     '''
                 }
             }
-        } // stage
+        }
         stage('terragrunt plan') {
             when { expression { params.COMMAND == 'plan' } }
             steps {
@@ -37,7 +30,7 @@ pipeline {
                     '''
                 }
             }
-        } // stage
+        }
         stage('terragrunt apply') {
             when { expression { params.COMMAND == 'apply' } }
             steps {
@@ -48,12 +41,16 @@ pipeline {
                     '''
                 }
             }
-        } // stage
+        }
         stage('clean up!') {
+            when { expression { params.COMMAND == 'apply' } }
             steps {
-                cleanWs cleanWhenFailure: false, notFailBuild: true
+                cleanWs cleanWhenAborted: false,
+                cleanWhenFailure: false,
+                cleanWhenNotBuilt: false,
+                cleanWhenUnstable: false,
+                notFailBuild: true
             }
-        } // stage
-
+        }
     } // stages
 } // pipeline
