@@ -6,7 +6,7 @@ pipeline {
     parameters {
         choice(name: 'ACCOUNT', choices: ['308620678440', 'other'], description: 'Select the AWS account')
         string(name: 'WORKINGDIR', defaultValue: 's3', description: 'working directory for Terraform command')
-        choice(name: 'COMMAND', choices: ['init', 'plan', 'apply'], description: 'Select Terraform process for this build')
+        choice(name: 'COMMAND', choices: ['init', 'plan', 'apply'], description: 'Select Terraform command for this build')
     }
     stages {
         stage('terragrunt init') {
