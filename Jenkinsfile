@@ -22,7 +22,7 @@ pipeline {
                 dir(params.ACCOUNT) {
                     sh '''
                     cd $WORKINGDIR
-                    terragrunt init
+                    terragrunt init -input=false
                     '''
                 }
             }
@@ -44,9 +44,14 @@ pipeline {
                 dir(params.ACCOUNT) {
                     sh '''
                     cd $WORKINGDIR
-                    terragrunt apply $WORKINGDIR.plan -input=false -auto-approve -lock-timeout=60s
+                    terragrunt apply -input=false -auto-approve $WORKINGDIR.plan
                     '''
                 }
+            }
+        } // stage
+        stage('clean up!') {
+            steps {
+                cleanWs cleanWhenFailure: false, notFailBuild: true
             }
         } // stage
 
