@@ -1,5 +1,8 @@
 pipeline {
     agent {dockerfile true}
+    options {
+        withAWS(credentials:'6f867985-6654-4f56-b3b4-6ae79eb82416')
+    }
     parameters {
         choice(name: 'ACCOUNT', choices: ['308620678440', 'other'], description: 'Select the AWS account')
         string(name: 'WORKINGDIR', defaultValue: 's3', description: 'working directory for Terraform command')
