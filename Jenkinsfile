@@ -1,7 +1,7 @@
 pipeline {
     agent {dockerfile true}
     options {
-        withAWS(credentials:'6f867985-6654-4f56-b3b4-6ae79eb82416')
+        withAWS(credentials:'1b21ca40-c9c8-4d68-92ac-edecf28c96c9')
     }
     parameters {
         choice(name: 'ACCOUNT', choices: ['308620678440', 'other'], description: 'Select the AWS account')
