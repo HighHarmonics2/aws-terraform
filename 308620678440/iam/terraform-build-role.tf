@@ -29,6 +29,13 @@ EOF
   }
 }
 
+# this creates an instance profile for the role - needed for an EC2 instance to use the role
+
+resource "aws_iam_instance_profile" "terraform-build2-ip" {
+   name = "terraform-build2Profile"
+   role = "${aws_iam_role.terraform-build2.name}"
+}
+
 ######################################################
 /* create managed policy for terraform build access rights
    the vpc Sid section should not be needed since ec2:* is also covered - but I include it here
