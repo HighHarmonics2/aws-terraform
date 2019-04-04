@@ -6,3 +6,6 @@ Terraform (with terragrunt) code to deploy to aws
 
 * Added Dynamodb table for terragrunt record locking
 * Using S3 backend with separate state files for each folder
+
+### Notes
+Need to swap out Terragrunt
