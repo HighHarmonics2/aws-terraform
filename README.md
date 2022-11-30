@@ -1,5 +1,7 @@
-# REPO NO LONGER VALID - terragrunt no longer used 
-# aws-terraform
+# REPO out of date
+terragrunt no longer used and terraform needs updating 
+
+## aws-terraform
 Terraform (with terragrunt) code to deploy to aws
 
 * Module for MySQL
