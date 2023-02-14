@@ -26,6 +26,7 @@ a09f52d7-acd6-4a0d-9212-d1dea07d914e
 
 
 |  Contributor | Bernard Gray |
+| -------- | ---------- |
 | aka    | cleary |
 | Time with Tidal | 3  yrs |
 | Contributor since | 2017 |
