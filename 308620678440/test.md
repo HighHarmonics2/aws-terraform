@@ -19,9 +19,7 @@ title: Tidal Contributor Profile - (name)
 ## Tidal Contributions  
 
 **How do you contribute to Tidal Cycles? What have you worked on?**  
-- 
 **What motivates you to be a Tidal contributor?**   
-- 
 
 ## Livecoding  
 
