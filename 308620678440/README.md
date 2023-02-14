@@ -11,26 +11,3 @@ For follow up see [Terraform AWS Provider](https://registry.terraform.io/provide
 ---
 a09f52d7-acd6-4a0d-9212-d1dea07d914e
 
-
-| Topic     | Details    |
-| :--------: | ---------- |
-|   | Bernard Gray |
-| aka    | cleary |
-| Time with Tidal | 3  yrs |
-| Contributor since | 2017 |
-| Other LiveCoding env | Estuary, Punctual, Hydra, ORCA |
-| Music available online | [SoundCloud](https://soundcloud.com/bergra) |
-| Code online | [GitHub](https://github.com/cleary/livecode/) |
-| Other music/audio sw | Ubuntu Studio/Ardour/Carla/Vital/mi-ugens|
-
-
-
-|  Contributor | Bernard Gray |
-| --------: | :---------- |
-| aka    | cleary |
-| Time with Tidal | 3  yrs |
-| Contributor since | 2017 |
-| Other LiveCoding env | Estuary, Punctual, Hydra, ORCA |
-| Music available online | [SoundCloud](https://soundcloud.com/bergra) |
-| Code online | [GitHub](https://github.com/cleary/livecode/) |
-| Other music/audio sw | Ubuntu Studio/Ardour/Carla/Vital/mi-ugens|
