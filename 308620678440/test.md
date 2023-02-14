@@ -24,24 +24,16 @@ title: Tidal Contributor Profile - (name)
 ## Livecoding  
 
 **What do you like about livecoding in Tidal? What inspires you?**   
--
 **How do you approach your livecoding sessions?**
-- 
 **What functions and coding approaches do you like to use?**
-- 
 **Do you use Tidal with other tools / environments?**
--
 
 ## Music  
 
 **Tell us about your livecoding music.**
-- 
 **How has your music evolved since you have been livecoding?**
-- 
 **What samples or instruments do you like to work with?**
--
 **What projects are you currently working on or planning? What's next?**
-- 
 
 ### Links to your music / recorded livecoding sessions:
 - Your Website
