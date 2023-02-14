@@ -11,8 +11,4 @@ For follow up see [Terraform AWS Provider](https://registry.terraform.io/provide
 ---
 a09f52d7-acd6-4a0d-9212-d1dea07d914e
 
-<img src="https://photos.smugmug.com/photos/i-7r8LGsw/0/O/i-7r8LGsw.jpg"  width="50%" height="50%">
 
----
-
-<img src="https://photos.smugmug.com/photos/i-7r8LGsw/0/O/i-7r8LGsw.jpg" >
