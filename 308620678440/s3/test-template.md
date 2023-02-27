@@ -9,36 +9,34 @@ author_title: (include if relevant)
 | Tidal Musician | (name)    |
 | --------:    | :---------- |
 | aka    | (screenName) |
-| Location | (city and/or country) | 
+| Location | (city and/or country) optional | 
 | Album/Release | (title) |
 | Genre | (EDM, Glitch/Noise, Techno, Hybrid, Electronic, Experimental, etc. ) |
-| Available | (link: Bandcamp, SoundCloud,  YouTube, etc) |
-| Release Date | (date) |
+| Available | (link to Bandcamp, SoundCloud, YouTube, etc) |
+| Release Date | (date) optional |
 | Collaborators| (other musicians/artists) |
 
 ## Summary 
-*(Instructions: 2 - 3 sentences that describe the project.)*  
+*(2 - 3 sentences that describe the project.)*  
 
-*Example: TidalTracks is a new collection of music made using Tidal Cycles and available now on Bandcamp. 
-These tracks were prepared for livecoding sessions at Algoraves throughout Great Britain and private sessions over the past year. *
+*Example: TidalTracks is a new collection of music made using Tidal Cycles and available now on Bandcamp. These tracks were prepared for livecoding sessions at Algoraves throughout Great Britain and private sessions over the past year.*
 
 ### Tracks and Features
-*(Instructions: Provide details about the music - a list of tracks, details on the sound sources, unique textures, etc. What makes this music stand out?)*  
+*(Provide details about the music - a list of tracks, details on sound sources, unique textures, etc. What makes this music stand out?)*  
 
 ### Use of Tidal & livecoding
-*(Instructions: Provide information on how Tidal Cycles was used. This can a description, code samples, etc.
-Include any relevant info on instruments or samples used, unique configurations, other software/hardware gear, etc)*  
+*(Provide information on how Tidal Cycles was used. This can a description, code samples, etc. Include any relevant info on instruments or samples, unique configurations, other software/hardware gear, etc.)*  
 
 
 ### Other  
 *(Anything additional you can share, including images.)*
 - Musical background
-- Bio details, education
+- Bio details
 - Algorave participation
 - etc
 
-
 ---
+
 ## Posting Instructions
 If you are to able/willing to work with a Pull Request in GitHub, use that method. Alternatively, you can work with one of the Blog editors and provide your content in whatever way works for you. Another option is to post in your GitHub repository using the markdown format, but don't do a Pull Request. In that case, just let a blog editor know when you are ready. 
 
