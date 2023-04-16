@@ -7,7 +7,8 @@
 | Music available online | [SoundCloud](https://soundcloud.com/digitalselves), [Bandcamp] (https://digitalselves.bandcamp.com/) |
 |            Code online | [GitHub](https://github.com/lwlsn)                           |
 |   Other music/audio sw | Audacity, Renoise Tracker DAW @_@                            |
-|               Comments | [Autonomous Computer Music Tidal Forum Thread](https://club.tidalcycles.org/t/autonomous-tidal-code-generation/1064/2) |
+|               Comments | - [Autonomous Computer Music Tidal Forum Thread](https://club.tidalcycles.org/t/autonomous-tidal-code-generation/1064/2)  - [blog comments](https://club.tidalcycles.org/t/blog-profile-digital-selves/4667)|
+
 
 ![](https://www.flickr.com/photos/hellocatfood/49626800896/)
 
